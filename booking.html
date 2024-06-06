@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form-group" method="POST" action="process_booking.php">
+            
+            <div id="form">
+                <h1 class="text-black text-center">BOOKING</h1>
+
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="first_name" class="from-control" required name ="first_name" >
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" id="input-group" placeholder="phone_number"class="from-control" required name ="phone_number">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar text-black" aria-hidden="true"></i>
+                        <input type="date" id="input-group" placeholder="departure Date"class="from-control" required name="departure_date">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users " aria-hidden="true"></i>
+                        <select id="input-group" style="background-color:rgb(255, 255, 255);"class="from-control"  required name="no_of_rooms">
+                            <option value="">no.of Rooms </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="8">6</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div id="second-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="last_name"class="from-control" required name="last_name">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="email" id="input-group" placeholder="email"class="from-control" required name="email">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <input type="date" id="input-group" placeholder="arrival Date"class="from-control" required name="arrival_date">
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color:white;"class="from-control" required name="room_type">
+                            <option value="">room Type</option>
+                            <option value="Villa">Villa</option>
+                            <option value="Presidential Suite">Presidential Suite</option>
+                            <option value="Executive Suite">Executive Suite</option>
+                            <option value="Studio">Studio</option>
+                            <option value="Twin">Twin</option>
+                        </select>
+                        
+                    </div>
+            
+                </div>
+                <button type="submit" value="Submit" id="submit-btn">Book Now</button>
+               
+
+            </div>
+            
+        </form>
+        
+    </div>
+   
+</body>
+</html>

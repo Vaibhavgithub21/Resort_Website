@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    background: url('home\bg_home.jpg') no-repeat center center/cover;
+    position: sticky;
+    top: 0;
+    background-attachment: fixed ;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color:rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('dbmswallpaper.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 2;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position:absolute;
+    top: 30%;
+    right: 10%;
+
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 400px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border : 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+activity{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic1{
+    display: flex;
+}
+#pic1 img{
+    width: 575px;
+    height: 400px;
+}
+#intro1{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 100px;
+}
+#intro1 h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+
+#intro2{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-left: -100%;
+    margin-top: 14%;
+    padding: 50px;
+}
+#intro2 h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#pic2{
+    display: flex;
+}
+#pic2 img{
+    width: 575px;
+    height: 400px;
+    margin-left: 54%;
+    margin-top: 4%;
+}
+
+#pic3{
+    display: flex;
+}
+#pic3 img{
+    width: 600px;
+    height: 300px;
+    margin-top: 4%;
+}
+#intro3{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 140px;
+}
+#intro3 h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#intro4{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-left: -100%;
+    margin-top: 14%;
+    padding: 50px;
+}
+#intro4 h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#pic4{
+    display: flex;
+}
+#pic4 img{
+    width: 575px;
+    height: 400px;
+    margin-left: 54%;
+    margin-top: 4%;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+#aboutus{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+
